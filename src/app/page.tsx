@@ -1,7 +1,26 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <main>joash cabanilla</main>
+    <main>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+      <p className="h-32">Joash Cabanilla</p>
+    </main>
   );
 }
