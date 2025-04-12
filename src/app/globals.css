@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -41,6 +42,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --font-primary: "Oswald", "sans-serif";
 }
 
 :root {
@@ -114,9 +116,18 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 scrollbar-thin scrollbar-thumb-secondary scrollbar-thumb-rounded scrollbar-track-background scrollbar-track-rounded scrollbar-corner-secondary scrollbar-corner-rounded antialiased;
   }
   body {
     @apply bg-background text-foreground;
   }
+
+  .container-wrapper{
+    @apply container mx-auto border-dashed p-4 border-l border-r;
+  }
+}
+
+@plugin 'tailwind-scrollbar' {
+  nocompatible: true;
+  preferredStrategy: 'pseudoelements';
 }
