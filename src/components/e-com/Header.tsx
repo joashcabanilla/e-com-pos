@@ -16,8 +16,7 @@ export default function Header(){
                         />
                         <h1 className="ml-2 text-3xl font-primary font-bold">NOVADECI</h1>
                     </div>
-                    <Separator orientation="vertical"/>
-
+                    <Separator orientation="vertical" />
                 </nav>
             </div>
         </header>
