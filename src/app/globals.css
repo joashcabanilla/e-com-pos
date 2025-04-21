@@ -116,27 +116,29 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50 scrollbar-thin scrollbar-thumb-secondary scrollbar-thumb-rounded scrollbar-track-background scrollbar-track-rounded scrollbar-corner-secondary scrollbar-corner-rounded antialiased;
+    @apply outline-ring/50 scrollbar-thin scrollbar-thumb-secondary scrollbar-thumb-rounded scrollbar-track-background scrollbar-track-rounded scrollbar-corner-secondary scrollbar-corner-rounded border-border antialiased;
   }
-  
+
   body {
     @apply bg-background text-foreground;
   }
 
-  input, textarea, select{
+  input,
+  textarea,
+  select {
     @apply placeholder:italic;
   }
 
-  header{
-    @apply w-full fixed top-0 z-50 border-b border-dashed bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60;
+  header {
+    @apply bg-background/95 supports-[backdrop-filter]:bg-background/60 fixed top-0 z-50 w-full border-b border-dashed shadow-sm backdrop-blur;
   }
 
-  .container-wrapper{
-    @apply container mx-auto border-dashed p-4 border-l border-r;
+  .container-wrapper {
+    @apply container mx-auto border-r border-l border-dashed p-4;
   }
 }
 
 @plugin 'tailwind-scrollbar' {
   nocompatible: true;
-  preferredStrategy: 'pseudoelements';
+  preferredstrategy: "pseudoelements";
 }

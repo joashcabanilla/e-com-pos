@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { oswald, inter } from "@/assets/fonts/font";
 
-//Components 
+//Components
 import Header from "@/components/e-com/Header";
 
 export const metadata: Metadata = {
@@ -19,10 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${oswald.variable} ${inter.className}`}>
-      <body className="w-full h-screen">
+    <html
+      lang="en"
+      className={`${inter.variable} ${oswald.variable} ${inter.className}`}
+    >
+      <body className="h-screen w-full">
         <Header />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
