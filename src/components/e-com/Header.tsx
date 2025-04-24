@@ -3,7 +3,6 @@
 import Image from "next/image";
 
 //UI library components
-import { Separator } from "@/components/ui/separator";
 import { Search } from "lucide-react";
 
 //tailwind variants
@@ -19,9 +18,9 @@ export default function Header() {
         <nav className="w-full grid grid-cols-2 h-12">
           <div className="flex items-center bg-amber-300">
             <div className="">
-            
+
             </div>
-            <div className="hidden sm:block">
+            <div className="">
               <h1 className="font-oswald cursor-pointer text-3xl font-bold">
                 NOVADECI
               </h1>
