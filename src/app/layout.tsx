@@ -23,7 +23,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${oswald.variable} ${inter.className}`}
     >
-      <body className="h-screen w-full">
+      <body className="w-dvw h-dvh">
         <Header />
         <main>{children}</main>
       </body>
